@@ -1,3 +1,15 @@
+EDIT BY BILLY
+------------
+
+I just forked this.  We are going to do some work on this tonight to get it compilable on more
+than... windows.  The stuff below is relevant, but is by no means the process.
+
+cheers
+-billy
+
+=====================================================================
+
+
 Introduction
 ------------
 This project provides an open source firmware for the AR.Drone quadrocopter by Parrot. 
