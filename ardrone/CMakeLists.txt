@@ -67,6 +67,54 @@ SET(
 	${GPIO_SRC} ${ATTITUDE_SRC}
 )
 
-add_executable( fly ${SRC} fly/main_fly.c )
-target_link_libraries(fly pthread)
+add_library( ardrone ${SRC} )
+
+add_executable( fly fly/main_fly.c )
+target_link_libraries(fly ardrone pthread)
+
+add_executable( attitude attitude/main_attitude.c )
+target_link_libraries( attitude ardrone pthread)
+
+add_executable( gpio gpio/main_gpio.c )
+target_link_libraries( gpio ardrone pthread)
+
+add_executable( motorboard motorboard/main_motorboard.c )
+target_link_libraries( motorboard ardrone pthread)
+
+add_executable( navboard navboard/main_navboard.c )
+target_link_libraries( navboard ardrone pthread)
+
+add_executable( udpclient udp/main_udpclient.c )
+target_link_libraries( udpclient ardrone pthread)
+
+add_executable( udpserver udp/main_udpserver.c )
+target_link_libraries( udpserver ardrone pthread)
+
+add_executable( vbat vbat/main_vbat.c )
+target_link_libraries( vbat ardrone pthread)
+
+add_executable( video video/main_video.c )
+target_link_libraries( video ardrone pthread)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
