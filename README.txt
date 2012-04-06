@@ -7,6 +7,9 @@ than... windows.  The stuff below is relevant, but is by no means the process.
 cheers
 -billy
 
+
+Edit: Yikes.  Harder than I thought.
+
 =====================================================================
 
 
